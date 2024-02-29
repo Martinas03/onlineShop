@@ -10,7 +10,7 @@ const PostFilter = ({filter, setFilter}) => {
                    onChange={event => setFilter({...filter, query: event.currentTarget.value})}
             />
             <MySelector value={filter.sort}
-                        onChange={event => setFilter({...filter, sort: event.currentTarget.value})}
+                        onChange={selectedSort => setFilter({...filter, sort: selectedSort})}
                         defaultOption={'sort by'}
                         options={[
                             {value: 'title', name: 'by title'},

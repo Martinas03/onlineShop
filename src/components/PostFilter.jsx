@@ -1,10 +1,11 @@
 import React from 'react';
 import MySelector from "./UI/select/MySelector";
+import MyInput from "./UI/input/MyInput";
 
 const PostFilter = ({filter, setFilter}) => {
     return (
         <div>
-            <input type="text"
+            <MyInput type="text"
                    value={filter.query}
                    placeholder={'search'}
                    onChange={event => setFilter({...filter, query: event.currentTarget.value})}

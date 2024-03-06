@@ -18,6 +18,7 @@ const PostFilter = ({filter, setFilter}) => {
                             {value: 'body', name: 'by name'}
                         ]}/>
         </div>
+
     );
 };
 
